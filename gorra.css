@@ -150,19 +150,19 @@ li a:hover, li a.active{
 
 @keyframes animate {
   20% {
-    background-image: url(gorras/gorra8.1.png);
+    background-image: url(gorra8.1.png);
     background-size: cover;
   }
   40% {
-    background-image: url(gorras/gorra8.2.png);
+    background-image: url(gorra8.2.png);
     background-size: cover;
   }
   60% {
-    background-image: url(gorras/gorra8.2.png);
+    background-image: url(gorra8.2.png);
     background-size: cover;
   }
   80% {
-    background-image: url(gorras/gorra8.1.png);
+    background-image: url(gorra8.1.png);
     background-size: cover;
   }
 }

@@ -78,6 +78,67 @@
                 </li>
             </ul>
         </div>
+        <div id="location-slider">
+            <ul>
+                <li>
+                    <a href="https://www.google.com/maps/place/New+Era+Store+-+Mall+del+Sur/@-12.1551229,-76.9844472,17z/data=!3m1!4b1!4m5!3m4!1s0x9105b9093bbfdb1b:0x17fd00aadb59148c!8m2!3d-12.1551282!4d-76.9822532?shorturl=1"> 
+                    <img src="mall.png" alt="Ubicación 1">
+                </a>
+                    <p>MALL DEL SUR</p>
+                </li>
+                <li>
+                    <a href="https://www.google.cl/maps/place/MegaPlaza+Independencia/@-11.9950953,-77.0675438,17z/data=!3m1!4b1!4m5!3m4!1s0x9105ce543477f8d9:0x9d64f6794789376b!8m2!3d-11.9951006!4d-77.0630591"> 
+                    <img src="mega plaza.jpg" alt="Ubicación 2">
+                    </a>
+                    <p>MEGA PLAZA</p>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/place/New+Era+Store+-+Plaza+Lima+Norte/@-12.0066179,-77.061489,17z/data=!3m1!4b1!4m5!3m4!1s0x9105cf053850ccbd:0xdd594f88eb9f09e8!8m2!3d-12.0066232!4d-77.059295?shorturl=1"> 
+                    <img src="plaza lima norte.jpg" alt="Ubicación 1">
+                </a>
+                    <p>PLAZA LIMA NORTE</p>
+                </li>
+                
+                <!-- Agrega más ubicaciones con imágenes y direcciones -->
+            </ul>
+            <button id="prevButton">Anterior</button>
+            <button id="nextButton">Siguiente</button>
+        </div>
+<script>
+    const slider = document.getElementById("location-slider");
+        const locations = slider.querySelector("ul");
+        const locationItems = locations.querySelectorAll("li");
+        const prevButton = document.getElementById("prevButton");
+        const nextButton = document.getElementById("nextButton");
+
+        let currentIndex = 0;
+
+        function goToLocation(index) {
+            if (index < 0) {
+                index = locationItems.length - 1;
+            } else if (index >= locationItems.length) {
+                index = 0;
+            }
+
+            const translateValue = -index * 100 + "%";
+            locations.style.transform = `translateX(${translateValue})`;
+            currentIndex = index;
+        }
+
+        // Escucha eventos de botones "Anterior" y "Siguiente"
+        prevButton.addEventListener("click", () => {
+            goToLocation(currentIndex - 1);
+        });
+
+        nextButton.addEventListener("click", () => {
+            goToLocation(currentIndex + 1);
+        });
+
+        // Inicialmente, muestra la primera ubicación
+        goToLocation(currentIndex);
+    </script>
+
+
     
     
         

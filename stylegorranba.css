@@ -43,7 +43,7 @@ nav ul li a{
 }
 
 li a.active, li:hover{
-    background:purple    ;
+    background:transparent    ;
     transition: .5s;
 }
 .checkbtn{
@@ -257,4 +257,90 @@ p {
             margin-right: 80px;
             margin-left: 400px;
         }
-    }   
+    }  
+    
+    
+    #location-slider {
+        width: 100%;
+        overflow: hidden;
+        background-color: #080808;
+    }
+    
+    #location-slider ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        transition: transform 0.5s;
+    }
+    
+    #location-slider li {
+        flex: 0 0 100%; /* Asegura que cada ubicación ocupe el ancho completo */
+        text-align: center;
+        padding: 20px;
+        
+    }
+    
+    #location-slider img {
+        max-width: 100%;
+        
+    }
+    
+    #location-slider p {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    button#prevButton,
+    button#nextButton {
+        background-color: #007BFF; /* Color de fondo */
+        color: #fff; /* Color del texto */
+        border: none;
+        padding: 10px 20px;
+        margin: 10px; /* Espacio entre los botones */
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    /* Estilos adicionales para el botón "Siguiente" */
+    button#nextButton {
+        background-color: #28A745; /* Cambia el color del botón "Siguiente" */
+    }
+    #location-slider p{
+        font-size: 20px;
+        color: white;
+    }
+    
+    @media (max-width: 768px) {
+        #location-slider li {
+            flex: 0 0 100%; /* Cambia el ancho para ocupar el 100% del contenedor */
+        }
+        
+        #location-slider p {
+            font-size: 14px; /* Reduce el tamaño de fuente del texto de la ubicación */
+        }
+    }
+    
+    /* Estilos para dispositivos con un ancho máximo de 480px (puedes ajustar este valor) */
+    @media (max-width: 480px) {
+        /* Asegúrate de que los botones sean visibles y estén posicionados de manera adecuada */
+        #prevButton, #nextButton {
+            display: block; /* Asegura que los botones sean visibles */
+            position: absolute;
+            top: 50%; /* Los coloca verticalmente en el centro */
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6); /* Agrega un fondo semi-transparente para mayor visibilidad */
+            color: white; /* Ajusta el color del texto */
+            padding: 10px 15px; /* Ajusta el espaciado */
+            border: none;
+            cursor: pointer;
+        }
+    
+        #prevButton {
+            left: 0; /* Coloca el botón "Anterior" en la esquina izquierda */
+        }
+    
+        #nextButton {
+            right: 0; /* Coloca el botón "Siguiente" en la esquina derecha */
+        }
+    }

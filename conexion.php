@@ -1,10 +1,10 @@
 <?php
 $servidor = LAPTOP-27FSTFC5\SQLEXPRESS;
-$usuario = LAPTOP-27FSTFC5\Joe RC;
-$password = "tu_contraseña";
-$base_datos = "tu_base_de_datos";
+$usuario = sa;
+$password = 12345678;
+$base_datos = tienda-gorros;
 
-$conexion = new mysqli($LAPTOP-27FSTFC5\SQLEXPRESS, LAPTOP-27FSTFC5\Joe RC, $password, $base_datos);
+$conexion = new mysqli($LAPTOP-27FSTFC5\SQLEXPRESS, $sa, $12345678, $tienda-gorros);
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);

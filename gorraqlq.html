@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylegqlq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"> </script>
+
+</head>
+<body>
+    <header class="header-1">
+        <nav class="navbar">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="a" class="logo-link">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="nav-list">
+                <li><a class="active" href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <div class="image-container">
+            <img src="wallpaperflare.com_wallpaper.jpg" alt="Descripción de la imagen">
+            <div class="image-overlay">
+                <h2>Los Angeles Lakers NBA 59Fifty Purple</h2>
+                <p> La gorra "Los Angeles Lakers NBA 59Fifty Purple" es un accesorio de moda deportiva emblemático que rinde homenaje a uno de los equipos más icónicos de la NBA, los Los Angeles Lakers. Esta gorra presenta un diseño elegante y distintivo con su color púrpura característico, que es el color principal del equipo. Confeccionada por la reconocida marca New Era, la gorra 59Fifty es conocida por su calidad y estilo.
+                </p>
+            </div>
+        </div>
+    </section>
+   <div class="blanco"> 
+    <div id="kiko-slider">
+        <ul class="slider">
+            <li id="slide1">
+                <img src="gorra8.1.png">
+            </li>
+            <li id="slide2">
+                <img src="gorra8.2.png">
+            </li>
+            <li id="slide3">
+                <img src="gorra8.3.png">
+            </li>
+            <li id="slide4">
+                <img src="gorra8.png">
+            </li>
+        </ul>
+        <ul class="menu ">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+            <li>
+                <a href="#slide4">4</a>
+            </li>
+
+        </ul>
+    </div>
+
+    
+    <div class="product-container">
+    <div class="product-details">
+        <h2>Gorra Brooklyn Nets NBA 9Fifty Black
+        </h2>
+        <p>Precio: <?php echo obtenerPrecio(); ?> S/.119.00</p>
+
+        <form method="post" action="calcular_importe.php">
+            <div class="tallas">
+                <label for="talla">Talla:</label>
+                <select id="talla" name="talla">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="color">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="Negro">Negro</option>
+                    <!-- Agrega más colores según sea necesario -->
+                </select>
+            </div>
+
+            <div class="cantidad">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+                <input type="submit" name="procesar" value="Procesar Compra">
+            </div>
+        </form>
+        <div class="xd"> 
+        <h3>Términos y Descripciones</h3>
+        
+        </div>
+
+<div class="dp">
+        <h2>Detalles del Producto</h2> 
+        <p>Color : Negro </p>
+        <p>Material: "Crown, Visor & Button: 100% COTTON"</p>
+        <p>Silueta: 9FIFTY</p>
+        <p>Equipo: Chicago Bulls</p>
+        <p>Deporte: BASKETBALL</p>
+    </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#"> 
+                <img src="logo.png" alt="Logo de Slee Dw">
+            </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2> SOBRE NOSOTROS </h2>
+            <p>NOS DEDICAMOS A MEJORAR LA MODA DE LAS PERSONAS</p>
+            <p>MEJORAMOS TU ESTILO Y SALVAMOS OUTFIT</p>
+        </div>
+        <div class="box">
+            <h2> SIGUENOS </h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"> </a>
+                <a href="#" class="fa fa-instagram"> </a>
+                <a href="#" class="fa fa-twitter"> </a>
+                <a href="#" class="fa fa-youtube"> </a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b> new era</b> - TODOS LOS DERECHOS RESERVADOS </small>
+    </div>
+</footer>
+   
+   
+    
+
+</body>
+</html>

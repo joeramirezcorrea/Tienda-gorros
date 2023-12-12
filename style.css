@@ -259,20 +259,5 @@ color: aqua;
         padding: 35px 0px;
         
     }
-    #scrollToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #007bff;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-}
 
 }
